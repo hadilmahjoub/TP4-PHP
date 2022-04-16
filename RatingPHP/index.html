@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>cookies1</title>
+  </head>
+  <body>
+    <div class="container"> <!--Container-->
+
+      <div class="left">
+        <img src="assets/image.webp" alt="PHP logo image">
+      </div>
+
+      <div class="right"> <!--Right-->
+        <h2>Veuillez évaluer le contenu du cours PHP</h2>
+        <form action="index.php" method="post">
+            <div class="choose">
+              <input type="radio" name="rate" id="one" value="bon" checked />
+              <label for="one">Bon</label>
+            </div>
+            <div class="choose">
+              <input type="radio" name="rate" id="two" value="moyen" />
+              <label for="two">Moyen</label>
+            </div>
+            <div class="choose">
+              <input type="radio" name="rate" id="three" value="mauvais" />
+              <label for="three">Mauvais</label>
+            </div>
+          <button type="submit">Evaluer</button>
+        </form>
+      </div> <!--Right-->
+      
+    </div> <!--Container-->
+  </body>
+</html>

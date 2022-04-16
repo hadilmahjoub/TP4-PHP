@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SanDelivery</title>
+  </head>
+  <body>
+    <form name="delform" action="recap.php" method="post" id="form">
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Name" 
+        required/><br />
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        placeholder="Last Name"
+        required
+      /><br />
+      <input
+        type="number"
+        name="sandnbr"
+        id="sandnbr"
+        placeholder="Sandwitchs Number"
+        required
+      /><br />
+      <textarea
+        name="address"
+        id="address"
+        cols="30"
+        rows="3"
+        placeholder="Address"
+        required
+      ></textarea
+      ><br />
+      <div class="sand">
+        <label for="CIN">CIN</label>
+        <input type="file" name="CIN" id="CIN">
+
+      </div>
+      <div class="sand">
+        <label for="sandtype">Sandwich type</label>
+        <select name="sandtype" id="sandtype">
+          <option value="viande">Viande</option>
+          <option value="poulet">Poulet</option>
+          <option value="escalope">Escalope</option></select
+        ><br />
+      </div>
+
+      <label for="ingredient">Ingredients to add</label><br />
+
+      <div class="sand">
+        <label for="harissa">Harissa</label>
+        <input type="checkbox" name="harissa" id="harissa" /><br />
+      </div>
+
+      <div class="sand">
+        <label for="salad">Salad</label>
+        <input type="checkbox" name="salad" id="salad" /><br />
+      </div>
+
+      <div class="sand">
+        <label for="mayo">Mayo</label>
+        <input type="checkbox" name="mayo" id="mayo" /><br />
+      </div>
+
+      <div class="btns">
+          <button type="submit">SUBMIT</button>
+          <button type="reset">RESET</button>
+      </div>
+
+    </form>
+  </body>
+</html>

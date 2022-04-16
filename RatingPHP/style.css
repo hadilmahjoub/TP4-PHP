@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to bottom right, #3b74c0, #1f219c);
+  display: grid;
+    align-items: center;
+    justify-items: center;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+​.container {
+  /* display: flex;
+  justify-content:space-between; */
+  /* flex-direction: row; */
+  width: 600px;
+  height: 450px;
+  /* position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  /* line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185); */
+}
+.container {
+  background: #f8f4e5;
+  padding: 50px 50px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 10px 10px 1px rgb(0, 0, 0, 0.2);
+}
+
+img {
+  /* display: inline; */
+  width: fit-content;
+  height: 400px;
+  object-fit:cover;
+  object-position: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 25px 0px;
+  color: #1a2250;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #89caff, #6589ff);
+  display: block;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 7px 20px #89caff94;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+.choose {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+}
+/* .choose:focus-within {
+  outline: 0.125em solid #aaaaff;
+} */
+
+
+input {
+  position: absolute;
+  left: -9999px;
+}
+input:checked+label,label:hover{
+  background-color: #c9e0fd;
+}
+input:checked+label::before {
+  box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+
+label {
+  display: inline;
+  cursor: pointer;
+  font-size: 500;
+  position: 1.2rem;
+  overflow: hidden;
+}
+label{
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em; 
+    transition: 0.25s ease;
+} 
+
+label:hover {
+    background-color: mix(#fff, #00005c, 84%);
+}
+
+label:before {
+      display: flex;
+      flex-shrink: 0;
+      content: "";
+      background-color: #fff;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      margin-right: 0.375em;
+      transition: 0.25s ease;
+      box-shadow: inset 0 0 0 0.125em #00005c;
+}
